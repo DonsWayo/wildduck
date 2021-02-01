@@ -17,7 +17,6 @@ declare -a arr=(
 "07_install_wildduck.sh"
 "08_install_haraka.sh"
 "09_install_zone_mta.sh"
-"10_install_wildduck_webmail.sh"
 "11_install_nginx.sh"
 "12_install_ufw_rules.sh"
 "13_install_ssl_certs.sh"

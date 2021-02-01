@@ -13,7 +13,6 @@ echo "DEPLOY SETUP
 2. Clone application code
 \$ git clone deploy@$HOSTNAME:/var/opt/wildduck.git
 \$ git clone deploy@$HOSTNAME:/var/opt/zone-mta.git
-\$ git clone deploy@$HOSTNAME:/var/opt/wildduck-webmail.git
 \$ git clone deploy@$HOSTNAME:/var/opt/haraka-plugin-wildduck.git
 \$ git clone deploy@$HOSTNAME:/var/opt/zonemta-wildduck.git
 

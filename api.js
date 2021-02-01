@@ -19,6 +19,7 @@ const Gelf = require('gelf');
 const os = require('os');
 const util = require('util');
 const ObjectID = require('mongodb').ObjectID;
+const corsMiddleware = require('restify-cors-middleware2')
 
 const usersRoutes = require('./lib/api/users');
 const addressesRoutes = require('./lib/api/addresses');
@@ -150,6 +151,16 @@ server.use((req, res, next) => {
     }
     next();
 });
+
+const cors = corsMiddleware({
+  preflightMaxAge: 5, //Optional
+  origins: ['*'],
+  allowHeaders: ['*'],
+  exposeHeaders: ['*']
+})
+
+server.pre(cors.preflight)
+server.use(cors.actual)
 
 server.use(restify.plugins.gzipResponse());
 
