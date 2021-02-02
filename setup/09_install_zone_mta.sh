@@ -21,7 +21,7 @@ rm -rf /etc/zone-mta
 
 # fresh install
 cd /var/opt
-git clone --bare git://github.com/zone-eu/zone-mta-template.git zone-mta.git
+git clone --bare git://github.com/DonsWayo/zone-mta-template.git zone-mta.git
 git clone --bare git://github.com/nodemailer/zonemta-wildduck.git
 
 # create update hooks so we can later deploy to this location

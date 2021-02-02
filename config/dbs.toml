@@ -1,5 +1,5 @@
 # mongodb connection string for the main database
-mongo="mongodb://127.0.0.1:27017/wildduck"
+mongo="mongodb://test:hJ37zQfrxpD6HET@cluster-m1-shard-00-00.iqpgq.mongodb.net:27017,cluster-m1-shard-00-01.iqpgq.mongodb.net:27017,cluster-m1-shard-00-02.iqpgq.mongodb.net:27017/HakiMail?ssl=true&replicaSet=atlas-fo6fv8-shard-0&authSource=admin&retryWrites=true&w=majority"
 
 # redis connection string to connect to a single master (see below for Sentinel example)
 #redis="redis://127.0.0.1:6379/3"
